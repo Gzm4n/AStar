@@ -135,7 +135,7 @@ public class AStarVisualizer extends JPanel {
     public void reset() {
         openSet.clear();
         closedSet.clear();
-        solved = false; // Reset the finished flag
+        solved = false; // Reiniciar la bandera de terminado
 
         for (int r = 0; r < ROWS; r++) {
             for (int c = 0; c < COLS; c++) {
@@ -155,7 +155,7 @@ public class AStarVisualizer extends JPanel {
         JFrame frame = new JFrame("A estrella");
         AStarVisualizer visualizer = new AStarVisualizer();
 
-        // Create a control panel for buttons
+        // Crear un panel con botones
         JPanel controlPanel = new JPanel();
 
         JButton startBtn = new JButton("Start");
